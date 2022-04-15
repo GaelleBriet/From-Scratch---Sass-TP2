@@ -1,0 +1,196 @@
+.section4 {
+  background-color: $black;
+  padding-top: 100px;
+
+  .section4-container {
+    width: 80%;
+    margin: 0 auto;
+
+    .section4-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        color: $orange;
+        font-family: $font1;
+        font-size: 3rem;
+        font-weight: 400;
+      }
+
+      h3 {
+        color: $white;
+        font-family: $font2;
+        text-transform: uppercase;
+        font-size: 3rem;
+        letter-spacing: 2px;
+      }
+
+      img {
+        padding: 40px 0;
+      }
+    }
+
+    .section4-grid {
+      width: 80%;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 250px 250px;
+      grid-template-areas:
+        "toprec squr"
+        "bottomrec squr";
+
+      #rect-top {
+        grid-area: toprec;
+
+        .s4r-left {
+          background: url(../img/event-01.jpg) center/cover;
+        }
+      }
+
+      #rect-bottom {
+        grid-area: bottomrec;
+
+        .s4r-left {
+          background: url(../img/event-02.jpg) center/cover;
+        }
+      }
+
+      .section4-rect {
+        display: flex;
+
+        .s4r-left {
+          width: 40%;
+          position: relative;
+
+          .s4r-date {
+            height: 100px;
+            width: 100px;
+            background: $black;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h4 {
+              font-family: $font3;
+              font-size: 2rem;
+            }
+            h5 {
+              font-family: $font3;
+              font-weight: 400;
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .s4r-right {
+          width: 60%;
+          background: $white;
+          padding: 40px 20px;
+
+          h4,
+          h5 {
+            font-family: $font3;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+          }
+          h4 {
+            font-size: 1.5rem;
+          }
+          h5 {
+            color: $grey;
+            font-size: 1rem;
+
+            i {
+              padding-right: 5px;
+              padding-left: 10px;
+            }
+          }
+          h6 {
+            text-transform: uppercase;
+            font-family: $font2;
+            font-size: 1.2rem;
+            font-weight: 200;
+            letter-spacing: 2px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .section4-square {
+        grid-area: squr;
+        background: url(../img/event-03.jpg) center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .s4-square {
+          background: $white;
+          width: 85%;
+          height: 85%;
+        }
+        .s4s-date {
+          position: absolute;
+          background: $black;
+          height: 100px;
+          width: 100px;
+          left: 50%;
+          transform: translateX(-50%);
+          color: $white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+
+          h4 {
+            font-family: $font3;
+            font-size: 2rem;
+          }
+          h5 {
+            font-family: $font3;
+            font-weight: 400;
+            font-size: 1.2rem;
+          }
+        }
+        .s4s-text {
+          background: $white;
+          padding: 150px 10px 20px;
+          text-align: center;
+
+          h4,
+          h5 {
+            font-family: $font3;
+            font-weight: 400;
+            letter-spacing: 2px;
+          }
+          h4 {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+          }
+          h5 {
+            color: $grey;
+            font-size: 1rem;
+            margin-bottom: 80px;
+          }
+          h6 {
+            text-transform: uppercase;
+            font-family: $font2;
+            font-size: 1.2rem;
+            font-weight: 200;
+            letter-spacing: 2px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
