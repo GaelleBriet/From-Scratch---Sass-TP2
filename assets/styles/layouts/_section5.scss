@@ -1,0 +1,47 @@
+.section5 {
+  background: $black;
+  .section5-container {
+    padding-top: 150px;
+    width: 80%;
+    margin: 0 auto;
+    .section5-avis {
+      background: $white;
+      position: relative;
+      padding: 0 100px;
+      .avis-img {
+        position: absolute;
+        background: url(../img/avatar-02.jpg) center/cover;
+        height: 70px;
+        width: 70px;
+        border-radius: 50px;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateY(-50%);
+      }
+      p {
+        text-align: center;
+        font-family: $font3;
+        padding-top: 100px;
+        font-size: 1.3rem;
+        line-height: 35px;
+      }
+      h2 {
+        text-align: center;
+        padding: 50px 0 0 0;
+        font-family: $font3;
+        font-weight: 400;
+        font-size: 2rem;
+      }
+      h3 {
+        text-align: center;
+        padding: 20px 0 100px;
+        color: $orange;
+        font-family: $font3;
+        font-weight: 400;
+      }
+    }
+    .section5-contact {
+      background: $white;
+    }
+  }
+}

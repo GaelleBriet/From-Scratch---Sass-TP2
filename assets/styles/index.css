@@ -599,6 +599,7 @@ header .header-text h6 {
   font-family: Allura, cursive;
   font-size: 3rem;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .section4 .section4-container .section4-top h3 {
@@ -815,5 +816,61 @@ header .header-text h6 {
   font-weight: 200;
   letter-spacing: 2px;
   cursor: pointer;
+}
+
+.section5 {
+  background: #282828;
+}
+
+.section5 .section5-container {
+  padding-top: 150px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section5 .section5-container .section5-avis {
+  background: #f0f0f0;
+  position: relative;
+  padding: 0 100px;
+}
+
+.section5 .section5-container .section5-avis .avis-img {
+  position: absolute;
+  background: url(../img/avatar-02.jpg) center/cover;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  margin: 0 auto;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.section5 .section5-container .section5-avis p {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  padding-top: 100px;
+  font-size: 1.3rem;
+  line-height: 35px;
+}
+
+.section5 .section5-container .section5-avis h2 {
+  text-align: center;
+  padding: 50px 0 0 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.section5 .section5-container .section5-avis h3 {
+  text-align: center;
+  padding: 20px 0 100px;
+  color: rgba(198, 152, 68, 0.904);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.section5 .section5-container .section5-contact {
+  background: #f0f0f0;
 }
 /*# sourceMappingURL=index.css.map */
