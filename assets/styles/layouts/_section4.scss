@@ -123,6 +123,10 @@
             font-weight: 200;
             letter-spacing: 2px;
             cursor: pointer;
+
+            &:hover {
+              color: $orange;
+            }
           }
         }
       }
@@ -190,6 +194,10 @@
             font-weight: 200;
             letter-spacing: 2px;
             cursor: pointer;
+
+            &:hover {
+              color: $orange;
+            }
           }
         }
       }

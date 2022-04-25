@@ -287,7 +287,7 @@ header .header-text h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 60px 0 400px 0;
-  background: #282828;
+  background: #21201e;
 }
 
 .section2 .section2-header h2 {
@@ -359,7 +359,7 @@ header .header-text h6 {
 .section2 .section2-container .section2-container-items {
   width: 90%;
   height: 150px;
-  color: #282828;
+  color: #21201e;
   border-bottom: 1px dashed #b3b3b3;
   margin: 0 auto;
   display: -ms-grid;
@@ -405,7 +405,7 @@ header .header-text h6 {
 
 .section3 {
   padding-top: 500px;
-  background: #282828;
+  background: #21201e;
 }
 
 .section3 .section3-container {
@@ -494,7 +494,7 @@ header .header-text h6 {
 
 .section3 .section3-container .section3-right {
   background: #f0f0f0;
-  color: #282828;
+  color: #21201e;
   height: 100%;
   width: 55%;
   display: -webkit-box;
@@ -566,10 +566,11 @@ header .header-text h6 {
   color: #f0f0f0;
   letter-spacing: 0.3rem;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .section4 {
-  background-color: #282828;
+  background-color: #21201e;
   padding-top: 100px;
 }
 
@@ -661,7 +662,7 @@ header .header-text h6 {
 .section4 .section4-container .section4-grid .section4-rect .s4r-left .s4r-date {
   height: 100px;
   width: 100px;
-  background: #282828;
+  background: #21201e;
   color: #f0f0f0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,6 +730,10 @@ header .header-text h6 {
   cursor: pointer;
 }
 
+.section4 .section4-container .section4-grid .section4-rect .s4r-right h6:hover {
+  color: rgba(198, 152, 68, 0.904);
+}
+
 .section4 .section4-container .section4-grid .section4-square {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -755,7 +760,7 @@ header .header-text h6 {
 
 .section4 .section4-container .section4-grid .section4-square .s4s-date {
   position: absolute;
-  background: #282828;
+  background: #21201e;
   height: 100px;
   width: 100px;
   left: 50%;
@@ -819,8 +824,15 @@ header .header-text h6 {
   cursor: pointer;
 }
 
+.section4 .section4-container .section4-grid .section4-square .s4s-text h6:hover {
+  color: rgba(198, 152, 68, 0.904);
+}
+
 .section5 {
-  background: #282828;
+  background: #21201e;
+  position: relative;
+  height: 1000px;
+  z-index: 1;
 }
 
 .section5 .section5-container {
@@ -833,18 +845,20 @@ header .header-text h6 {
   background: #f0f0f0;
   position: relative;
   padding: 0 100px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .section5 .section5-container .section5-avis .avis-img {
   position: absolute;
   background: url(../img/avatar-02.jpg) center/cover;
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   border-radius: 50px;
-  margin: 0 auto;
+  top: -40px;
   left: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .section5 .section5-container .section5-avis p {
@@ -853,6 +867,21 @@ header .header-text h6 {
   padding-top: 100px;
   font-size: 1.3rem;
   line-height: 35px;
+  position: relative;
+}
+
+.section5 .section5-container .section5-avis p .fa-solid {
+  font-size: 1rem;
+  position: absolute;
+}
+
+.section5 .section5-container .section5-avis p .fa-quote-left {
+  top: 100px;
+  left: -20px;
+}
+
+.section5 .section5-container .section5-avis p .fa-quote-right {
+  right: 135px;
 }
 
 .section5 .section5-container .section5-avis h2 {
@@ -865,13 +894,120 @@ header .header-text h6 {
 
 .section5 .section5-container .section5-avis h3 {
   text-align: center;
-  padding: 20px 0 100px;
+  padding: 20px 0 80px;
   color: rgba(198, 152, 68, 0.904);
   font-family: Roboto, sans-serif;
   font-weight: 400;
 }
 
-.section5 .section5-container .section5-contact {
-  background: #f0f0f0;
+.section5 .section5-after {
+  position: absolute;
+  content: "";
+  background: url(/assets/img/gmap.jpg);
+  background-position: 50% 50%;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  top: 400px;
+}
+
+.section5 .section5-contact {
+  background: url(/assets/img/bg-footer.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  color: #f0f0f0;
+  height: 350px;
+  top: 850px;
+}
+
+.section5 .section5-contact .contact-left {
+  width: 50%;
+  padding-left: 340px;
+}
+
+.section5 .section5-contact .contact-left h2 {
+  font-family: Allura, cursive;
+  color: rgba(198, 152, 68, 0.904);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.section5 .section5-contact .contact-left p {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+  line-height: 40px;
+  font-size: 1.1rem;
+  padding-right: 50px;
+}
+
+.section5 .section5-contact .contact-right {
+  width: 50%;
+  padding-right: 340px;
+  padding-left: 50px;
+}
+
+.section5 .section5-contact .contact-right .newsletter {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.section5 .section5-contact .contact-right .newsletter h3 {
+  line-height: 50px;
+}
+
+.section5 .section5-contact .contact-right .newsletter input {
+  border: 0.1mm solid rgba(198, 152, 68, 0.2);
+  background: #21201e;
+  padding: 10px;
+  font-size: 1rem;
+  width: 50%;
+  margin-bottom: 50px;
+  color: #838383;
+}
+
+.section5 .section5-contact .contact-right .newsletter input:focus {
+  outline: none;
+}
+
+.section5 .section5-contact .contact-right .follow {
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section5 .section5-contact .contact-right .follow ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 10px;
+}
+
+.section5 .section5-contact .contact-right .follow ul i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.section5 .section5-contact .contact-right .follow ul i {
+  color: #838383;
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
