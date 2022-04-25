@@ -616,6 +616,7 @@ header .header-text h6 {
 
 .section4 .section4-container .section4-grid {
   width: 80%;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   gap: 10px;
