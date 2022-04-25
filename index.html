@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to The Resto, restaurant avec terrasse ombragée, cuisine moderne et savoureuse.Restaurant à cavaillon, vaucluse.</title>
-    <meta name="description" content="Bienvenue à The Resto, votre restaurant à Cavaillon, Vaucluse. Avec sa terrasse ombragée et sa cuisine savoureuse, vous passerez un agréable moment.">
+    <title>Welcome to The Resto, restaurant avec terrasse ombragée, cuisine moderne et savoureuse à Cavaillon, Vaucluse.</title>
+    <meta name="description" content="Bienvenue à The Resto, votre restaurant à Cavaillon, en Vaucluse. Avec sa terrasse ombragée et sa cuisine française classique et savoureuse, vous passerez un agréable moment.">
 
     <meta property="og:title" content="The Resto" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="url" />
     <meta property="og:image" content="ic-slider-01.png" />
-    <meta property="og:description" content="Bienvenue à The Resto, votre restaurant à Cavaillon, Vaucluse. Avec sa terrasse ombragée et sa cuisine savoureuse, vous passerez un agréable moment." />
+    <meta property="og:description" content="Bienvenue à The Resto, votre restaurant à Cavaillon, en Vaucluse. Avec sa terrasse ombragée et sa cuisine française classique et savoureuse, vous passerez un agréable moment." />
     <meta property="og:locale" content="fr_FR" />
 
+    <link rel="shortcut icon" href="./assets/img/ic-cricle.png">
     <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -38,9 +38,9 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-icons">
-          <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://fr-fr.facebook.com/" aria-label="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/" aria-label="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" aria-label="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </nav>
       <div class="header-text">
@@ -184,6 +184,7 @@
           <form action="">
             <input
               type="number"
+              aria-label="nombre de personnes"
               name="people"
               id="people"
               min="1"
@@ -191,12 +192,12 @@
               placeholder="People"
               required
             />
-            <input type="date" name="date" id="date" value="2020-07-15" />
-            <input type="time" name="time" id="time" />
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="tel" name="tel" id="tel" placeholder="Phone" />
-            <input type="email" name="email" id="email" placeholder="Email" />
-            <input type="button" value="Book Now" id="button" />
+            <input type="date" aria-label="date de réservation" name="date" id="date" value="2020-07-15" />
+            <input type="time" aria-label="heure de réservation" name="time" id="time" />
+            <input type="text" aria-label="nom de la réservation" name="name" id="name" placeholder="Name" />
+            <input type="tel" aria-label="téléphone" name="tel" id="tel" placeholder="Phone" />
+            <input type="email" aria-label="email" name="email" id="email" placeholder="Email" />
+            <input type="button" aria-labelledby="book now" value="Book Now" id="button" />
           </form>
         </div>
       </div>
@@ -289,10 +290,10 @@
             <div class="follow">
               <h3>Follow Us :</h3>
               <ul>
-                <li><a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.pinterest.fr/" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                <li><a href="https://fr-fr.facebook.com/" aria-label="facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/" aria-label="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" aria-label="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.pinterest.fr/" aria-label="pinterest" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
               </ul>
             </div>
           </div>
