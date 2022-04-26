@@ -395,6 +395,7 @@ header .header-text div h6 {
   .section2 .section2-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    width: 80%;
   }
 }
 
@@ -1007,7 +1008,8 @@ header .header-text div h6 {
 
 @media screen and (max-width: 740px) {
   .section5 .section5-container .section5-avis {
-    padding: 20px;
+    padding: 40px;
+    max-height: 688px;
   }
 }
 
@@ -1043,7 +1045,20 @@ header .header-text div h6 {
 @media screen and (max-width: 740px) {
   .section5 .section5-container .section5-avis p {
     font-size: 1.2rem;
-    line-height: 25px;
+    line-height: 30px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section5 .section5-container .section5-avis p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .section5 .section5-container .section5-avis p {
+    font-size: 0.8rem;
   }
 }
 
@@ -1061,12 +1076,25 @@ header .header-text div h6 {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .section5 .section5-container .section5-avis h2 {
+    font-size: 1rem;
+  }
+}
+
 .section5 .section5-container .section5-avis h3 {
   text-align: center;
   padding: 20px 0 80px;
   color: rgba(198, 152, 68, 0.904);
   font-family: Roboto, sans-serif;
   font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+  .section5 .section5-container .section5-avis h3 {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
 }
 
 .section5 .section5-after {
@@ -1148,6 +1176,7 @@ header .header-text div h6 {
   .section5 .section5-contact .contact-right {
     padding: 0;
     margin: 0 auto;
+    width: 80%;
   }
 }
 
@@ -1169,6 +1198,12 @@ header .header-text div h6 {
   width: 50%;
   margin-bottom: 50px;
   color: #838383;
+}
+
+@media screen and (max-width: 1000px) {
+  .section5 .section5-contact .contact-right .newsletter input {
+    width: 250px;
+  }
 }
 
 .section5 .section5-contact .contact-right .newsletter input:focus {

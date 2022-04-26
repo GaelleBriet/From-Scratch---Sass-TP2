@@ -19,7 +19,8 @@
       max-height: 730px;
 
       @media screen and (max-width: 740px) {
-        padding: 20px;
+        padding: 40px;
+        max-height: 688px;
       }
 
       .avis-img {
@@ -53,7 +54,16 @@
 
         @media screen and (max-width: 740px) {
           font-size: 1.2rem;
-          line-height: 25px;
+          line-height: 30px;
+          padding-top: 50px;
+        }
+
+        @media screen and (max-width: 550px) {
+          font-size: 1rem;
+        }
+
+        @media screen and (max-width: 420px) {
+          font-size: 0.8rem;
         }
       }
 
@@ -67,6 +77,9 @@
         @media screen and (max-width: 740px) {
           font-size: 1.3rem;
         }
+        @media screen and (max-width: 500px) {
+          font-size: 1rem;
+        }
       }
 
       h3 {
@@ -75,6 +88,11 @@
         color: $orange;
         font-family: $font3;
         font-weight: 400;
+
+        @media screen and (max-width: 500px) {
+          font-size: 1rem;
+          padding: 10px 0;
+        }
       }
     }
   }
@@ -139,6 +157,7 @@
       @media screen and (max-width: 1320px) {
         padding: 0;
         margin: 0 auto;
+        width: 80%;
       }
 
       .newsletter {
@@ -156,6 +175,10 @@
           width: 50%;
           margin-bottom: 50px;
           color: $grey2;
+
+          @media screen and (max-width: 1000px) {
+            width: 250px;
+          }
 
           &:focus {
             outline: none;
