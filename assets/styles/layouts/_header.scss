@@ -10,6 +10,10 @@ header {
     width: 90%;
     margin: 0 auto;
 
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
     .logo {
       @include center;
       font-family: $font1;
@@ -23,6 +27,10 @@ header {
       justify-content: space-around;
       font-family: $font3;
       font-size: 0.7rem;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
 
       li {
         padding-bottom: 5px;
@@ -87,6 +95,10 @@ header {
         letter-spacing: 6px;
         font-weight: 100;
         font-size: 0.7rem;
+
+        @media screen and (max-width: 800px) {
+          font-size: 1rem;
+        }
       }
     }
   }

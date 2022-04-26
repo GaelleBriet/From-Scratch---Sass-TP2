@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Allura";
   src: url(../fonts/Allura-Regular.ttf);
@@ -52,6 +53,13 @@ header nav {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 800px) {
+  header nav {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 header nav .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,6 +86,12 @@ header nav ul {
       justify-content: space-around;
   font-family: Roboto, sans-serif;
   font-size: 0.7rem;
+}
+
+@media screen and (max-width: 800px) {
+  header nav ul {
+    display: none;
+  }
 }
 
 header nav ul li {
@@ -166,6 +180,12 @@ header .header-text div h6 {
   font-size: 0.7rem;
 }
 
+@media screen and (max-width: 800px) {
+  header .header-text div h6 {
+    font-size: 1rem;
+  }
+}
+
 .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,6 +213,12 @@ header .header-text div h6 {
   outline: 1px dashed rgba(198, 152, 68, 0.904);
   outline-offset: -15px;
   text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .section1 .section1-left {
+    width: 100%;
+  }
 }
 
 .section1 .section1-left div {
@@ -264,6 +290,12 @@ header .header-text div h6 {
   width: 50%;
 }
 
+@media screen and (max-width: 700px) {
+  .section1 .section1-right {
+    display: none;
+  }
+}
+
 .section2 {
   color: #f0f0f0;
   position: relative;
@@ -300,7 +332,7 @@ header .header-text div h6 {
 
 .section2 .section2-header .section2-nav {
   width: 60%;
-  min-width: 1000px;
+  max-width: 1000px;
 }
 
 .section2 .section2-header .section2-nav ul {
@@ -333,6 +365,12 @@ header .header-text div h6 {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 450px) {
+  .section2 .section2-header .section2-nav ul li {
+    font-size: 0.7rem;
+  }
+}
+
 .section2 .section2-container {
   width: 60%;
   max-width: 1000px;
@@ -353,6 +391,13 @@ header .header-text div h6 {
   z-index: 2;
 }
 
+@media screen and (max-width: 1300px) {
+  .section2 .section2-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .section2 .section2-container .section2-container-items {
   width: 90%;
   height: 150px;
@@ -369,10 +414,25 @@ header .header-text div h6 {
   justify-items: start;
 }
 
+@media screen and (max-width: 650px) {
+  .section2 .section2-container .section2-container-items {
+    -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+  }
+}
+
 .section2 .section2-container .section2-container-items img {
   width: 80px;
   height: 80px;
   border-radius: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .section2 .section2-container .section2-container-items img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
 }
 
 .section2 .section2-container .section2-container-items .s2ci-item {
@@ -384,6 +444,14 @@ header .header-text div h6 {
   font-size: 0.8rem;
   font-weight: 900;
   line-height: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .section2 .section2-container .section2-container-items .s2ci-item {
+    font-size: 0.7rem;
+    font-weight: normal;
+    padding-left: 25px;
+  }
 }
 
 .section2 .section2-container .section2-container-items .s2ci-price {
@@ -402,9 +470,28 @@ header .header-text div h6 {
   left: 0;
 }
 
+@media screen and (max-width: 1300px) {
+  .section2 .s2-after {
+    top: 900px;
+    height: 700px;
+  }
+}
+
 .section3 {
   padding-top: 500px;
   background: #21201e;
+}
+
+@media screen and (max-width: 1300px) {
+  .section3 {
+    padding-top: 1400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section3 {
+    height: 2400px;
+  }
 }
 
 .section3 .section3-container {
@@ -422,6 +509,15 @@ header .header-text div h6 {
   height: 600px;
 }
 
+@media screen and (max-width: 1300px) {
+  .section3 .section3-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section3 .section3-container .section3-left {
   background: black;
   color: #f0f0f0;
@@ -429,6 +525,13 @@ header .header-text div h6 {
   width: 25%;
   outline: #b3b3b3 1px dashed;
   outline-offset: -30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .section3 .section3-container .section3-left {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 
 .section3 .section3-container .section3-left div {
@@ -467,6 +570,12 @@ header .header-text div h6 {
   line-height: 3rem;
 }
 
+@media screen and (max-width: 1450px) {
+  .section3 .section3-container .section3-left div h4 {
+    font-size: 1rem;
+  }
+}
+
 .section3 .section3-container .section3-left div h3,
 .section3 .section3-container .section3-left div h5 {
   color: #f0f0f0;
@@ -487,6 +596,12 @@ header .header-text div h6 {
   line-height: 2rem;
 }
 
+@media screen and (max-width: 1450px) {
+  .section3 .section3-container .section3-left div h5 {
+    font-size: 0.9rem;
+  }
+}
+
 .section3 .section3-container .section3-left div img {
   padding: 40px 0;
 }
@@ -504,6 +619,15 @@ header .header-text div h6 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .section3 .section3-container .section3-right {
+    width: 100%;
+    max-width: 600px;
+    height: 900px;
+    padding-bottom: 40px;
+  }
 }
 
 .section3 .section3-container .section3-right div h2 {
@@ -530,8 +654,8 @@ header .header-text div h6 {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas: "number date time" "name phone mail" ". btn .";
@@ -543,6 +667,13 @@ header .header-text div h6 {
   background: #f0f0f0;
   padding-left: 5px;
   height: 50px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+  .section3 .section3-container .section3-right form input:nth-child(n):not(:last-child) {
+    max-width: 150px;
+  }
 }
 
 .section3 .section3-container .section3-right form input:nth-child(n):not(:last-child):focus {
@@ -568,9 +699,33 @@ header .header-text div h6 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1300px) {
+  .section3 .section3-container .section3-right form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section4 {
   background-color: #21201e;
   padding-top: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+  .section4 {
+    padding-top: 500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section4 {
+    display: none;
+  }
 }
 
 .section4 .section4-container {
@@ -838,6 +993,7 @@ header .header-text div h6 {
   padding-top: 150px;
   width: 80%;
   margin: 0 auto;
+  max-height: 730px;
 }
 
 .section5 .section5-container .section5-avis {
@@ -846,6 +1002,13 @@ header .header-text div h6 {
   padding: 0 100px;
   width: 80%;
   margin: 0 auto;
+  max-height: 730px;
+}
+
+@media screen and (max-width: 740px) {
+  .section5 .section5-container .section5-avis {
+    padding: 20px;
+  }
 }
 
 .section5 .section5-container .section5-avis .avis-img {
@@ -860,6 +1023,14 @@ header .header-text div h6 {
           transform: translateX(-50%);
 }
 
+.section5 .section5-container .section5-avis .text-container ::before {
+  content: "❝";
+}
+
+.section5 .section5-container .section5-avis .text-container ::after {
+  content: "❞";
+}
+
 .section5 .section5-container .section5-avis p {
   text-align: center;
   font-family: Roboto, sans-serif;
@@ -869,18 +1040,11 @@ header .header-text div h6 {
   position: relative;
 }
 
-.section5 .section5-container .section5-avis p .fa-solid {
-  font-size: 1rem;
-  position: absolute;
-}
-
-.section5 .section5-container .section5-avis p .fa-quote-left {
-  top: 100px;
-  left: -20px;
-}
-
-.section5 .section5-container .section5-avis p .fa-quote-right {
-  right: 135px;
+@media screen and (max-width: 740px) {
+  .section5 .section5-container .section5-avis p {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
 }
 
 .section5 .section5-container .section5-avis h2 {
@@ -889,6 +1053,12 @@ header .header-text div h6 {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 2rem;
+}
+
+@media screen and (max-width: 740px) {
+  .section5 .section5-container .section5-avis h2 {
+    font-size: 1.3rem;
+  }
 }
 
 .section5 .section5-container .section5-avis h3 {
@@ -929,9 +1099,27 @@ header .header-text div h6 {
   top: 850px;
 }
 
+@media screen and (max-width: 1320px) {
+  .section5 .section5-contact {
+    background: #21201e;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section5 .section5-contact {
+    top: 1000px;
+  }
+}
+
 .section5 .section5-contact .contact-left {
   width: 50%;
   padding-left: 340px;
+}
+
+@media screen and (max-width: 1320px) {
+  .section5 .section5-contact .contact-left {
+    display: none;
+  }
 }
 
 .section5 .section5-contact .contact-left h2 {
@@ -954,6 +1142,13 @@ header .header-text div h6 {
   width: 50%;
   padding-right: 340px;
   padding-left: 50px;
+}
+
+@media screen and (max-width: 1320px) {
+  .section5 .section5-contact .contact-right {
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .section5 .section5-contact .contact-right .newsletter {

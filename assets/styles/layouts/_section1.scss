@@ -12,6 +12,10 @@
     outline-offset: -15px;
     text-align: center;
 
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+
     div {
       width: 90%;
       height: 90%;
@@ -66,5 +70,9 @@
   .section1-right {
     background: url(../img/store-01.jpg) center/cover;
     width: 50%;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
   }
 }

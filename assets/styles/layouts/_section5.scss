@@ -8,6 +8,7 @@
     padding-top: 150px;
     width: 80%;
     margin: 0 auto;
+    max-height: 730px;
 
     .section5-avis {
       background: $white;
@@ -15,6 +16,12 @@
       padding: 0 100px;
       width: 80%;
       margin: 0 auto;
+      max-height: 730px;
+
+      @media screen and (max-width: 740px) {
+        padding: 20px;
+      }
+
       .avis-img {
         position: absolute;
         background: url(../img/avatar-02.jpg) center/cover;
@@ -25,6 +32,17 @@
         left: 50%;
         transform: translateX(-50%);
       }
+
+      .text-container {
+        & ::before {
+          content: "❝";
+        }
+
+        & ::after {
+          content: "❞";
+        }
+      }
+
       p {
         text-align: center;
         font-family: $font3;
@@ -33,18 +51,9 @@
         line-height: 35px;
         position: relative;
 
-        .fa-solid {
-          font-size: 1rem;
-          position: absolute;
-        }
-
-        .fa-quote-left {
-          top: 100px;
-          left: -20px;
-        }
-
-        .fa-quote-right {
-          right: 135px;
+        @media screen and (max-width: 740px) {
+          font-size: 1.2rem;
+          line-height: 25px;
         }
       }
 
@@ -54,6 +63,10 @@
         font-family: $font3;
         font-weight: 400;
         font-size: 2rem;
+
+        @media screen and (max-width: 740px) {
+          font-size: 1.3rem;
+        }
       }
 
       h3 {
@@ -86,9 +99,20 @@
     height: 350px;
     top: 850px;
 
+    @media screen and (max-width: 1320px) {
+      background: $black;
+    }
+    @media screen and (max-width: 450px) {
+      top: 1000px;
+    }
+
     .contact-left {
       width: 50%;
       padding-left: 340px;
+
+      @media screen and (max-width: 1320px) {
+        display: none;
+      }
 
       h2 {
         font-family: $font1;
@@ -111,6 +135,11 @@
       width: 50%;
       padding-right: 340px;
       padding-left: 50px;
+
+      @media screen and (max-width: 1320px) {
+        padding: 0;
+        margin: 0 auto;
+      }
 
       .newsletter {
         text-transform: uppercase;
